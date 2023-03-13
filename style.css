@@ -9,3 +9,7 @@ h1,h2,h3 {
 p,a {
   font-family: 'Martel', serif;
 }
+
+.bi-trash3:hover {
+  color: #FF0000;
+}
