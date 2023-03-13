@@ -7,6 +7,7 @@
   <title>To Do List</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
   <script src="app.js" module defer></script>
 </head>
@@ -26,12 +27,12 @@
     <div class="grid grid-cols-3 gap-4 my-10 justify-between w-full md:w-1/2" role="group">
       <button data-filter="all" class="bg-indigo-200 hover:bg-indigo-300 rounded-md py-1">Toutes</button>
       <button data-filter="todo" class="bg-indigo-200	 hover:bg-indigo-300 rounded-md py-1">En cours</button>
-      <button data-filter="finished" class="bg-indigo-200	 hover:bg-indigo-300 rounded-md py-1">Terminées</button>
+      <button data-filter="done" class="bg-indigo-200	 hover:bg-indigo-300 rounded-md py-1">Terminées</button>
     </div>
     <!-- LIST -->
     <div class="w-full md:w-1/2">
       <ul class="list-group">
-        <!-- ITEM -->
+        <!--
         <li class="todo list-group-item grid grid-cols-6 bg-gray-200 py-2 items-center justify-start rounded-md mb-4">
           <div class="flex justify-start pl-5">
             <input class="form-check-input col-span-1" type="checkbox" id="todo-1">
@@ -42,14 +43,14 @@
             </label>
           </div>
         <div class="flex justify-end pr-5">
-          <label class="ms-auto btn col-span-1">
+          <label class="ms-auto btn btn-danger col-span-1">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3 cursor-pointer" viewBox="0 0 16 16">
             <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"/>
           </svg>
           </label>
         </div>
         </li>
-        <!-- ITEM -->
+
         <li class="todo list-group-item grid grid-cols-6 bg-gray-200 py-2 items-center justify-start rounded-md mb-4">
           <div class="flex justify-start pl-5">
             <input class="form-check-input col-span-1" type="checkbox" id="todo-1">
@@ -67,6 +68,7 @@
           </label>
         </div>
         </li>
+      -->
       </ul>
     </div>
   </div>
