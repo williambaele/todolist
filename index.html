@@ -7,18 +7,25 @@
   <title>To Do List</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
 </head>
 <body class="bg-indigo-50 px-4 md:px-0">
-  <div class="container mx-auto h-screen my-10 flex items-center  flex-col">
+  <div class="container mx-auto h-screen my-10 flex items-center flex-col">
     <h1 class="text-3xl font-medium text-center mb-10">Welcome to your to-do list manager</h1>
-    <div class="grid md:grid-cols-6 gap-4 w-full md:w-1/2 ">
+    <!-- ADD TASK -->
+    <form class="grid md:grid-cols-6 gap-4 w-full md:w-1/2 ">
       <div class="md:col-span-5">
-        <input type="text" class="bg-gray-200 pl-4 py-2 rounded-md w-full" placeholder="New task">
+        <input required="" type="text" class="bg-gray-200 pl-4 py-2 rounded-md w-full form-control" name="title" placeholder="New task" data-com.bitwarden.browser.user-edited="yes">
       </div>
       <div class="md:col-span-1">
-        <button class="bg-green-400 py-2 px-4 rounded-md font-medium w-full">Add</button>
+        <button class="bg-green-400 py-2 px-4 rounded-md font-medium w-full hover:bg-green-300">Add</button>
       </div>
-  </div>
+    </form>
+    <div class="grid md:grid-cols-3 gap-4 my-10 justify-between w-1/2" role="group">
+      <button data-filter="all" class="bg-indigo-200 hover:bg-indigo-300 rounded-md py-1">Toutes</button>
+      <button data-filter="todo" class="bg-indigo-200	 hover:bg-indigo-300 rounded-md py-1">Toutes</button>
+      <button data-filter="finished" class="bg-indigo-200	 hover:bg-indigo-300 rounded-md py-1">Toutes</button>
+    </div>
   </div>
 </body>
 </html>
