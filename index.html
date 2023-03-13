@@ -8,11 +8,17 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-indigo-50">
-  <div class="container mx-auto h-screen my-10">
-    <div class="flex justify-center items-center">
-      <h1 class="text-3xl font-medium">Welcome to your to-do list manager</h1>
-    </div>
+<body class="bg-indigo-50 px-4 md:px-0">
+  <div class="container mx-auto h-screen my-10 flex items-center  flex-col">
+    <h1 class="text-3xl font-medium text-center mb-10">Welcome to your to-do list manager</h1>
+    <div class="grid md:grid-cols-6 gap-4 w-full md:w-1/2 ">
+      <div class="md:col-span-5">
+        <input type="text" class="bg-gray-200 pl-4 py-2 rounded-md w-full" placeholder="New task">
+      </div>
+      <div class="md:col-span-1">
+        <button class="bg-green-400 py-2 px-4 rounded-md font-medium w-full">Add</button>
+      </div>
+  </div>
   </div>
 </body>
 </html>
